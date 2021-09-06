@@ -39,8 +39,8 @@ const printLanguage = function (languages) {
     .join(", ");
 
   const lastLangauge = languages
-  .map((e) => e.name)
-  .slice(-1);
+    .map((e) => e.name)
+    .slice(-1);
 
   if (languages.length > 1) {
     return `They speak ${firstLanguages} and ${lastLangauge}`;
