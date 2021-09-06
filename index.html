@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Country information</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
 
+  <body>
+    <h1>Let's search some country information</h1>
+    <img class="world" src="/frontend-country-information/assets/pngwing.com.png" alt="world image" />
+
+    <form action="" class="form">
+      <input type="text" name="searchfield" id="searchfield" />
+      <button>Search</button>
+    </form>
+
+    <div class="land-container">
+      <div class="line-header"></div>
+      <div class="line-content"></div>
+    </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
