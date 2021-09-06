@@ -1,0 +1,22 @@
+{
+  "name": "frontend-country-information",
+  "version": "1.0.0",
+  "description": "country information",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haiko-E/frontend-country-information.git"
+  },
+  "author": "Haiko Erinkveld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haiko-E/frontend-country-information/issues"
+  },
+  "homepage": "https://github.com/Haiko-E/frontend-country-information#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
