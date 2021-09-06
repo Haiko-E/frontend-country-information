@@ -113,3 +113,6 @@ searchForm.addEventListener("submit", function (e) {
   printData(searchInput.value);
   searchInput.value = "";
 });
+
+// cleanen van de pagina wanneer er gerefreshed wordt
+cleanElements();
