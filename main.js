@@ -15,11 +15,12 @@ let secondline = document.createElement("li");
 let thirdline = document.createElement("li");
 
 // Functie om de data uit de API te halen
+// prettier-ignore
 const fetchData = async function (search) {
   try {
     const result = await axios.get(`https://restcountries.eu/rest/v2/name/${search}`);
-
     return result;
+
   } catch (e) {
     cleanElements();
     console.log("ERROR");
@@ -29,13 +30,17 @@ const fetchData = async function (search) {
 };
 
 // Functie voor het printen van meerdere talen
+// prettier-ignore
 const printLanguage = function (languages) {
+  
   const firstLanguages = languages
     .map((e) => e.name)
     .slice(0, -1)
     .join(", ");
 
-  const lastLangauge = languages.map((e) => e.name).slice(-1);
+  const lastLangauge = languages
+  .map((e) => e.name)
+  .slice(-1);
 
   if (languages.length > 1) {
     return `They speak ${firstLanguages} and ${lastLangauge}`;
